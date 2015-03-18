@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
+		916A244A1AB9C50D00833C53 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 916A24491AB9C50D00833C53 /* Gameplay.m */; };
 		918AB9321AB9B81000681778 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = 918AB9311AB9B81000681778 /* Seal.m */; };
 		918AB93F1AB9B82300681778 /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 918AB93E1AB9B82300681778 /* Penguin.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
@@ -80,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		916A24481AB9C50D00833C53 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
+		916A24491AB9C50D00833C53 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
 		918AB9301AB9B81000681778 /* Seal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seal.h; path = Source/Seal.h; sourceTree = "<group>"; };
 		918AB9311AB9B81000681778 /* Seal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seal.m; path = Source/Seal.m; sourceTree = "<group>"; };
 		918AB93D1AB9B82300681778 /* Penguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Penguin.h; path = Source/Penguin.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				916A24481AB9C50D00833C53 /* Gameplay.h */,
+				916A24491AB9C50D00833C53 /* Gameplay.m */,
 				918AB9301AB9B81000681778 /* Seal.h */,
 				918AB9311AB9B81000681778 /* Seal.m */,
 				918AB93D1AB9B82300681778 /* Penguin.h */,
@@ -400,6 +405,7 @@
 				918AB9321AB9B81000681778 /* Seal.m in Sources */,
 				918AB93F1AB9B82300681778 /* Penguin.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				916A244A1AB9C50D00833C53 /* Gameplay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
