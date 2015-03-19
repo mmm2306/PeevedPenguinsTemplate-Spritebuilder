@@ -13,6 +13,7 @@
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
     CCNode *_levelNode;
+    CCNode *_contentNode;
 }
 
 -(void)didLoadFromCCB
@@ -41,8 +42,13 @@
     [penguin.physicsBody applyForce:force];
     
     self.position = ccp(0,0);
-    CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
+    CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:_contentNode.boundingBox];
     [self runAction:follow];
+}
+
+-(void)retry
+{
+    [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Levels/Level1"]];
 }
 
 @end
