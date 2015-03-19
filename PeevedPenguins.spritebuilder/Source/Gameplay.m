@@ -48,7 +48,7 @@
 
 -(void)retry
 {
-    [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Levels/Level1"]];
+    [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Gameplay"]];
 }
 
 @end
