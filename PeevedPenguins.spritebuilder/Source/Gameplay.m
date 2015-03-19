@@ -40,7 +40,7 @@
     
     _currentPenguin.physicsBody.allowsRotation = NO;
     
-    _penguinCatapultJoint = [CCPhysicsJoint connectedDistanceJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138)];
+    _penguinCatapultJoint = [CCPhysicsJoint connectedDistanceJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 120)];
     
     
 }
