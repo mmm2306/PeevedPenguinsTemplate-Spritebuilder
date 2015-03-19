@@ -19,7 +19,12 @@
     self.userInteractionEnabled = YES;
 }
 
--(void)launchPenguid
+-(void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
+    [self launchPenguin];
+}
+
+-(void)launchPenguin
 {
     CCNode *penguin = [CCBReader load:@"Penguin"];
     penguin.position = ccpAdd(_catapultArm.position, ccp(16, 50));
