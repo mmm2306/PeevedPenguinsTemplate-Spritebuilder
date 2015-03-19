@@ -25,6 +25,8 @@
 
 -(void)didLoadFromCCB
 {
+    _physicsNode.collisionDelegate = self;
+    
     self.userInteractionEnabled = YES;
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
@@ -43,6 +45,11 @@
     _penguinCatapultJoint = [CCPhysicsJoint connectedDistanceJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138)];
     
     
+}
+
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair typeA:(CCNode *)nodeA typeB:(CCNode *)nodeB
+{
+    CCLOG(@"something collided with the seal");
 }
 
 -(void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
