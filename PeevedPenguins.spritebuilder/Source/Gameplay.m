@@ -66,6 +66,7 @@
     
     
     CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"SealExplosion"];
+    NSLog(@"seal explosion %@", explosion);
     explosion.autoRemoveOnFinish = TRUE;
     explosion.position = seal.position;
     [seal addChild:explosion];
