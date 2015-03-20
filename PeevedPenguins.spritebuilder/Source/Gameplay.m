@@ -37,7 +37,7 @@
     _currentPenguin = [CCBReader load:@"Penguin"];
     CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
     _currentPenguin.position  = [_physicsNode convertToNodeSpace:penguinPosition];
-    
+    NSLog(@"penguin explosion %@", _currentPenguin);
     [_physicsNode addChild:_currentPenguin];
     
     _currentPenguin.physicsBody.allowsRotation = NO;
