@@ -64,6 +64,11 @@
 {
 
     [seal removeFromParent];
+    
+    CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"SealExplosion"];
+    explosion.autoRemoveOnFinish = TRUE;
+    explosion.position = seal.position;
+    [seal addChild:explosion];
 
 }
 
